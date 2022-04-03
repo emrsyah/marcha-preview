@@ -1,10 +1,17 @@
 import React from "react";
 import Footer from "../components/Footer";
-
+import Body from "../components/home/Body";
+import Features from "../components/home/Features";
+import Header from "../components/home/Header";
 
 function Home() {
   return (
-    <Footer />
+    <div className="bg-[#F8F6FF]">
+      <Header />
+      <Features />
+      <Body />
+      <Footer />
+    </div>
   );
 }
 
