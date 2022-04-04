@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import foto1 from "../../assets/marcha-samuel.svg";
 import foto2 from "../../assets/marcha-john.svg";
 import { Tab } from "@headlessui/react";
-import PaymentInCard from "./PaymentInCard";
+import PaymentCard from "./PaymentCard";
 
 const dataIn = [
   {
@@ -85,14 +85,14 @@ function Content() {
         <Tab.Panel>
           <div className="my-10 flex flex-col gap-7">
           {dataIn.map(d=>(
-            <PaymentInCard key={d.id} data={d} />
+            <PaymentCard key={d.id} data={d} />
           ))}
           </div>
         </Tab.Panel>
         <Tab.Panel>
         <div className="my-10 flex flex-col gap-7">
           {dataOut.map(d=>(
-            <PaymentInCard key={d.id} data={d} />
+            <PaymentCard key={d.id} data={d} />
           ))}
           </div>
         </Tab.Panel>

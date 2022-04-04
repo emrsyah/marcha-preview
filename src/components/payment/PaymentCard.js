@@ -1,6 +1,6 @@
 import React from "react";
 
-function PaymentInCard({ data }) {
+function PaymentCard({ data }) {
   return (
     <div
       className="py-3 px-5 bg-white"
@@ -43,4 +43,4 @@ function PaymentInCard({ data }) {
   );
 }
 
-export default PaymentInCard;
+export default PaymentCard;
