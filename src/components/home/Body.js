@@ -14,8 +14,6 @@ function Body() {
       .then(data=> setHistory(data))
   }, [])
 
-  console.log(history)
-
   return (
     <main className="mx-5 my-8">
       <div className="flex justify-between">

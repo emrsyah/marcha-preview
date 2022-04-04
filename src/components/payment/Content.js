@@ -60,8 +60,6 @@ function Content() {
       .then(data=> setPayment(data))
   }, [])
 
-  console.log(payment)
-
   return (
     <div className="bg-[#F8F6FF]">
     <nav className="flex justify-center items-center my-5 bg-white">
