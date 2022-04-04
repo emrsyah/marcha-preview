@@ -1,6 +1,6 @@
 import React from "react";
 
-function PaymentCard({ data }) {
+function PaymentCard({ data, image }) {
   return (
     <div
       className="py-3 px-5 bg-white"
@@ -8,7 +8,7 @@ function PaymentCard({ data }) {
     >
       <div className="grid grid-cols-8 gap-2">
         <img
-          src={data.gambar}
+          src={image}
           alt=""
           className="col-span-1 rounded-lg h-10 w-10"
         />

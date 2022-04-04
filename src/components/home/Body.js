@@ -1,36 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HistoryCard from "./HistoryCard";
 import foto1 from "../../assets/marcha-ahmad.svg";
 import foto2 from "../../assets/marcha-john.svg";
 
-let data = [
-  {
-    id: 1,
-    nama: "Ahmad Joni",
-    waktu: "Hari ini, 17:00",
-    jumlah: "50.000",
-    pemasukan: true,
-    gambar: foto1,
-  },
-  {
-    id: 2,
-    nama: "John Doe",
-    waktu: "01 April, 11:29",
-    jumlah: "150.000",
-    pemasukan: false,
-    gambar: foto2,
-  },
-//   {
-//     id: 3,
-//     nama: "John Doe",
-//     waktu: "01 April, 11:29",
-//     jumlah: "150.000",
-//     pemasukan: true,
-//     gambar: foto2,
-//   },
-];
+let images = [foto1, foto2];
 
 function Body() {
+  const [history, setHistory] = useState();
+
+  useEffect(()=>{
+    fetch('http://localhost:8000/history')
+      .then(res => res.json())
+      .then(data=> setHistory(data))
+  }, [])
+
+  console.log(history)
+
   return (
     <main className="mx-5 my-8">
       <div className="flex justify-between">
@@ -38,8 +23,8 @@ function Body() {
         <p className="text-[13px] font-medium text-purple-600 cursor-pointer hover:text-purple-700">See all</p>
       </div>
       <div className="flex gap-3 flex-col my-4">
-        {data.map((d) => (
-          <HistoryCard data={d} key={d.id} />
+        {history?.map((d, i) => (
+          <HistoryCard data={d} key={d.id} image={images[i]} />
         ))}
       </div>
     </main>

@@ -1,56 +1,67 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import foto1 from "../../assets/marcha-samuel.svg";
 import foto2 from "../../assets/marcha-john.svg";
 import { Tab } from "@headlessui/react";
 import PaymentCard from "./PaymentCard";
 
-const dataIn = [
-  {
-    id: 1,
-    nama: 'Samuel',
-    tipe: 'in',
-    jumlah: '18.000',
-    note: 'Makan Padang',
-    deadline: '17/04',
-    status: 'Pending',
-    gambar: foto1,
-  },
-  {
-    id: 2,
-    nama: 'John',
-    tipe: 'in',
-    jumlah: '20.000',
-    note: 'Futsal',
-    deadline: '01/04',
-    status: 'Over Deadline',
-    gambar: foto2,
-  },
-]
+// const dataIn = [
+//   {
+//     id: 1,
+//     nama: 'Samuel',
+//     tipe: 'in',
+//     jumlah: '18.000',
+//     note: 'Makan Padang',
+//     deadline: '17/04',
+//     status: 'Pending',
+//     gambar: foto1,
+//   },
+//   {
+//     id: 2,
+//     nama: 'John',
+//     tipe: 'in',
+//     jumlah: '20.000',
+//     note: 'Futsal',
+//     deadline: '01/04',
+//     status: 'Over Deadline',
+//     gambar: foto2,
+//   },
+// ]
 
-const dataOut = [
-  {
-    id: 1,
-    nama: 'Samuel',
-    tipe: 'out',
-    jumlah: '18.000',
-    note: 'Makan Padang',
-    deadline: '17/04',
-    status: 'Pending',
-    gambar: foto1,
-  },
-  {
-    id: 2,
-    nama: 'John',
-    tipe: 'out',
-    jumlah: '20.000',
-    note: 'Futsal',
-    deadline: '01/04',
-    status: 'Over Deadline',
-    gambar: foto2,
-  },
-]
+// const dataOut = [
+//   {
+//     id: 1,
+//     nama: 'Samuel',
+//     tipe: 'out',
+//     jumlah: '18.000',
+//     note: 'Makan Padang',
+//     deadline: '17/04',
+//     status: 'Pending',
+//     gambar: foto1,
+//   },
+//   {
+//     id: 2,
+//     nama: 'John',
+//     tipe: 'out',
+//     jumlah: '20.000',
+//     note: 'Futsal',
+//     deadline: '01/04',
+//     status: 'Over Deadline',
+//     gambar: foto2,
+//   },
+// ]
+let images = [foto1, foto2];
 
 function Content() {
+  const [payment, setPayment] = useState()
+
+  useEffect(()=>{
+    fetch('http://localhost:8000/payment')
+      .then(res => res.json())
+      .then(data=> setPayment(data))
+  }, [])
+
+  console.log(payment)
+
   return (
     <div className="bg-[#F8F6FF]">
     <nav className="flex justify-center items-center my-5 bg-white">
@@ -84,15 +95,15 @@ function Content() {
       <Tab.Panels className="my-7">
         <Tab.Panel>
           <div className="my-10 flex flex-col gap-7">
-          {dataIn.map(d=>(
-            <PaymentCard key={d.id} data={d} />
+          {payment?.in.map((d,i)=>(
+            <PaymentCard key={d.id} data={d} image={images[i]}/>
           ))}
           </div>
         </Tab.Panel>
         <Tab.Panel>
         <div className="my-10 flex flex-col gap-7">
-          {dataOut.map(d=>(
-            <PaymentCard key={d.id} data={d} />
+          {payment?.out.map((d,i)=>(
+            <PaymentCard key={d.id} data={d} image={images[i]} />
           ))}
           </div>
         </Tab.Panel>
