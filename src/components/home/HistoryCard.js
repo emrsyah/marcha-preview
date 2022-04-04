@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function HistoryCard({ data }) {
   return (
     <div className="flex justify-between bg-white hover:bg-gray-50 items-center p-[10px] cursor-pointer transition-all duration-75 hover:scale-[101%]" style={{boxShadow: '2px 2px 5px 0px #9D20FF1A'}}>
