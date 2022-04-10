@@ -1,8 +1,6 @@
 # Marcha Preview
 Repository untuk preview aplikasi marcha via web, dibuat dengan react dan tailwind
 
-## PWA Support 🎉 ##
-
 ### Instalasi dan Jalankan ###
 1. jalankan "npm install" on cmd
 2. run "json-server --watch data/db.json --port 8000" on cmd (<b>Penting, diperlukan untuk fake server api</b>)
@@ -20,6 +18,7 @@ Repository untuk preview aplikasi marcha via web, dibuat dengan react dan tailwi
 ### Fitur Lainnya ###
 <ul>
   <li>Modal Notifikasi</li>
+  <li>PWA Support 🎉 </li>
 </ul>
 
 ### Hal-Hal Penting ###
