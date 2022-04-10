@@ -8,7 +8,7 @@ function Header() {
       <Navbar />
       <div className="flex items-center flex-col gap-2">
         <p className="text-white text-xs">Saldo Kamu</p>
-        <h5 className="text-white text-3xl font-medium">Rp 350.000</h5>
+        <h5 className="text-white text-4xl font-medium">Rp 350.000</h5>
         <div className="grid grid-cols-3 my-4 gap-10">
           <div className="flex items-center flex-col gap-1">
             <div className="text-white bg-[#BE85F2] hover:bg-purple-400 cursor-pointer p-2 rounded-lg">

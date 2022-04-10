@@ -14,8 +14,10 @@ function Body() {
       .then(data=> setHistory(data))
   }, [])
 
+  console.log(history)
+
   return (
-    <main className="mx-5 my-8">
+    <main className="mx-5 my-8 mb-[70px]">
       <div className="flex justify-between">
         <h5 className="text-sm font-semibold">Last Activity</h5>
         <p className="text-[13px] font-medium text-purple-600 cursor-pointer hover:text-purple-700">See all</p>

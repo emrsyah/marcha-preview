@@ -10,6 +10,7 @@ body{
 }
 
 
+
 @layer components{
     .profileJudul{
         @apply font-medium text-sm opacity-75;
