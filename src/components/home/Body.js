@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import HistoryCard from "./HistoryCard";
+import HistoryCard from "../HistoryCard";
 import foto1 from "../../assets/marcha-ahmad.svg";
 import foto2 from "../../assets/marcha-john.svg";
 
@@ -14,10 +14,9 @@ function Body() {
       .then(data=> setHistory(data))
   }, [])
 
-  console.log(history)
 
   return (
-    <main className="mx-5 my-8 mb-[70px]">
+    <main className="mx-5 my-8 mb-[90px]">
       <div className="flex justify-between">
         <h5 className="text-sm font-semibold">Last Activity</h5>
         <p className="text-[13px] font-medium text-purple-600 cursor-pointer hover:text-purple-700">See all</p>

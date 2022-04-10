@@ -33,7 +33,7 @@ function Footer() {
         className={`flex justify-center hover:text-purple-700 items-center flex-col text-gray-500 cursor-pointer ${
           location.pathname === "/statistic" && "text-purple-700"
         }`}
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/statistic")}
       >
         <Icon icon="bx:bar-chart-square" width="25" />
         <p className="text-xs font-medium m-0">Statistic</p>
