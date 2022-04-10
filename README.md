@@ -11,7 +11,14 @@ Repository untuk preview aplikasi marcha via web, dibuat dengan react dan tailwi
 <ul>
   <li>Home</li> 
   <li>Payment</li>
+  <li>Statistik</li>
   <li>Profile</li>
+</ul>
+
+### Fitur Lainnya ###
+<ul>
+  <li>Modal Notifikasi</li>
+  <li>PWA Support 🎉 </li>
 </ul>
 
 ### Hal-Hal Penting ###
