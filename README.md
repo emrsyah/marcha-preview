@@ -3,9 +3,8 @@ Repository untuk preview aplikasi marcha via web, dibuat dengan react dan tailwi
 
 ### Instalasi dan Jalankan ###
 1. jalankan "npm install" on cmd
-2. run "json-server --watch data/db.json --port 8000" on cmd (<b>Penting, diperlukan untuk fake server api</b>)
-3. run "npm start" on cmd
-4. Enjoy
+2. run "npm start" on cmd
+3. Enjoy
 
 ### Pages Tersedia ###
 <ul>
@@ -19,21 +18,35 @@ Repository untuk preview aplikasi marcha via web, dibuat dengan react dan tailwi
 <ul>
   <li><b>PWA Support 🎉 </b></li>
   <li>Modal Notifikasi</li>
+  <li>Fetch external data lewat API</li>
   <li>Responsive Chart Statistik</li>
 </ul>
 
 ### Hal-Hal Penting ###
 1. Website ini tidak dibuat untuk dilihat dari view dekstop.
 2. Silahkan lihat dari mobile view, <b>Rekomendasi: 360px width untuk hasil maksimal.</b>
-3. Jangan lupa nyalakan dahulu json-servernya sesuai instruksi instalasi di paling atas.
 
 ## PWA 🎉 ##
-1. Install PWA dengan menekan ikon di search bar atas
-<img width="418" alt="image" src="https://user-images.githubusercontent.com/70552996/162630484-daaacd18-9ef4-4e3d-b994-14d5140872a9.png">
-2. Konfirmasi penginstallan
-<img width="304" alt="image" src="https://user-images.githubusercontent.com/70552996/162630543-304670de-66dd-42c1-83aa-10e108593972.png">
-3. PWA terinstall
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/70552996/162630721-f4d79ff6-8275-4a7b-8183-047249589bc6.png">
+#### 1. Install PWA dengan menekan ikon titik 3 di kanan atas. ####
+
+![WhatsApp Image 2022-04-11 at 14 48 07](https://user-images.githubusercontent.com/70552996/162689745-818c7251-c654-45a9-94f9-2b6e13e3d64e.jpeg)
+
+#### 2. Klik Instal Aplikasi ####
+
+![WhatsApp Image 2022-04-11 at 14 48 07 (1)](https://user-images.githubusercontent.com/70552996/162689891-3c48cee8-3e84-458a-953a-817c33a48ecc.jpeg)
+
+#### 3. Konfirmasi Penginstallan ####
+
+![WhatsApp Image 2022-04-11 at 14 48 08 (3)](https://user-images.githubusercontent.com/70552996/162690133-ec83a186-8414-4f05-b398-0e274e20ca8d.jpeg)
+
+#### 4. PWA terinstall dalam bentuk aplikasi ####
+
+![WhatsApp Image 2022-04-11 at 14 48 08 (1)](https://user-images.githubusercontent.com/70552996/162690220-58de9732-3604-48bb-a05e-9abde55088a6.jpeg)
+
+#### 5. Selesai ####
+
+![WhatsApp Image 2022-04-11 at 14 48 08 (2)](https://user-images.githubusercontent.com/70552996/162690336-d630f73b-0283-4c5f-a2c8-dbd2f256cf8f.jpeg)
+
 
 ### Screenshot ###
 <img width="188" alt="marcha-1" src="https://user-images.githubusercontent.com/70552996/161523352-8bf094df-d263-4112-92de-dafa4ff8cf6b.png">
