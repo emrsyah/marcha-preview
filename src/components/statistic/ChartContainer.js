@@ -4,7 +4,7 @@ import { Chart } from './Chart'
 
 function ChartContainer() {
   return (
-    <div className="main-shadow p-2 mx-2 my-7 rounded-md">
+    <div className="main-shadow p-2 mx-2 my-7 rounded-md bg-white">
     <Chart />
     <div className="flex justify-between items-center mx-9 mt-4">
       <div className="">

@@ -66,7 +66,7 @@ function Content() {
       <h5 className="font-bold text-xl">Payment</h5>
     </nav>
     <Tab.Group>
-      <Tab.List className="grid grid-cols-2">
+      <Tab.List className="grid grid-cols-2 bg-white">
         <Tab as={Fragment}>
           {({ selected }) => (
             <button

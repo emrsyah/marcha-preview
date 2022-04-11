@@ -6,7 +6,7 @@ import Header from "../components/home/Header";
 
 function Home() {
   return (
-    <div className="bg-[#F8F6FF]">
+    <div className="bg-[#F8F6FF] h-full">
       <Header />
       <Features />
       <Body />
