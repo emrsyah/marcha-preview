@@ -62,7 +62,7 @@ function Content() {
 
   return (
     <div className="bg-[#F8F6FF]">
-    <nav className="flex justify-center items-center my-5 bg-white">
+    <nav className="flex justify-center items-center py-5 bg-white">
       <h5 className="font-bold text-xl">Payment</h5>
     </nav>
     <Tab.Group>
