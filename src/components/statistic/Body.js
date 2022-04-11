@@ -10,7 +10,7 @@ function Body() {
   const [history, setHistory] = useState();
 
   useEffect(() => {
-    fetch("https://marchadata.free.beeceptor.com/history")
+    fetch("https://mocki.io/v1/c759f128-53b3-4f9c-936b-e8d93afb5389")
       .then((res) => res.json())
       .then((data) => setHistory(data));
   }, []);

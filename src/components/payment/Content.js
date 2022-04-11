@@ -55,7 +55,7 @@ function Content() {
   const [payment, setPayment] = useState()
 
   useEffect(()=>{
-    fetch('https://marchadata.free.beeceptor.com/payment')
+    fetch('https://mocki.io/v1/42d41020-3d8e-42d0-9410-2dd8e1587002')
       .then(res => res.json())
       .then(data=> setPayment(data))
   }, [])
