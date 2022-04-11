@@ -10,7 +10,7 @@ function Body() {
   const [history, setHistory] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:8000/history")
+    fetch("https://marchadata.free.beeceptor.com/history")
       .then((res) => res.json())
       .then((data) => setHistory(data));
   }, []);

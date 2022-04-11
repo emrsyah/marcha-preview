@@ -55,7 +55,7 @@ function Content() {
   const [payment, setPayment] = useState()
 
   useEffect(()=>{
-    fetch('http://localhost:8000/payment')
+    fetch('https://marchadata.free.beeceptor.com/payment')
       .then(res => res.json())
       .then(data=> setPayment(data))
   }, [])

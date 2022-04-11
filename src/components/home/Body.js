@@ -8,18 +8,19 @@ let images = [foto1, foto2];
 function Body() {
   const [history, setHistory] = useState();
 
-  useEffect(()=>{
-    fetch('http://localhost:8000/history')
-      .then(res => res.json())
-      .then(data=> setHistory(data))
-  }, [])
-
+  useEffect(() => {
+    fetch("https://marchadata.free.beeceptor.com/history")
+      .then((res) => res.json())
+      .then((data) => setHistory(data));
+  }, []);
 
   return (
     <main className="mx-5 my-8 mb-[90px]">
       <div className="flex justify-between">
         <h5 className="text-sm font-semibold">Last Activity</h5>
-        <p className="text-[13px] font-medium text-purple-600 cursor-pointer hover:text-purple-700">See all</p>
+        <p className="text-[13px] font-medium text-purple-600 cursor-pointer hover:text-purple-700">
+          See all
+        </p>
       </div>
       <div className="flex gap-3 flex-col my-4">
         {history?.map((d, i) => (

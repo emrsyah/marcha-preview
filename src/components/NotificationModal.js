@@ -9,7 +9,7 @@ function NotificationModal({openState, setOpenState}) {
       <Dialog
         open={openState}
         onClose={() => setOpenState(false)}
-        className="w-4/5 border-[1px] border-gray-500 rounded-md py-2  top-[10%] right-[5%] fixed  z-50 bg-white"
+        className="w-4/5 border-[1px] border-gray-500 rounded-md py-2  top-[10%] right-[7%] fixed  z-50 bg-white"
       >
         <Dialog.Overlay />
         <div className="flex justify-between items-center p-2 border-b-[1px] border-gray-300">
